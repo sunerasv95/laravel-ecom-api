@@ -65,7 +65,7 @@ class ProductController extends Controller
     }
 
 
-    public function getSellerForProduct($id, $sid)
+    public function getSellerDetailsForProduct($id, $sid)
     {
         $seller = $this->product::find($id)
             ->users()
